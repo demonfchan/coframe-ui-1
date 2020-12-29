@@ -13,7 +13,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:8081/api',
+        target: 'http://39.105.213.176/api',
         pathRewrite: {'^/api': ''}
       },
       '/sso-login': {
