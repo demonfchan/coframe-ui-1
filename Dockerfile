@@ -6,4 +6,4 @@ RUN cnpm i && npm run build:dll && npm run build:prod
 
 FROM nginx:alpine
 COPY --from=app /usr/src/mymaven/dist /usr/share/nginx/html
-COPY default.conf /etc/nginx/conf.d/
+COPY default.conf.template /etc/nginx/templates/
