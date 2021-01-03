@@ -5,5 +5,6 @@ WORKDIR /usr/src/mymaven
 RUN cnpm i && npm run build:dll && npm run build:prod
 
 FROM nginx:alpine
+ENV PROXY_API http://coframe.rio.chenmin.org
 COPY --from=app /usr/src/mymaven/dist /usr/share/nginx/html
 COPY default.conf.template /etc/nginx/templates/
