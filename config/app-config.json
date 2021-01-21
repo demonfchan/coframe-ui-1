@@ -3,5 +3,5 @@
   "serverUrl": "/sso-login",
   "title": "Coframe",
   "shortTitle": "Coframe",
-  "platformRoleTmpId": "governor-role-tpl-grp-platform"
+  "platformRoleTmpId": ""
 }
